@@ -11,6 +11,7 @@ import {
 } from '@expo-google-fonts/balsamiq-sans'
 
 import FormNativeBase from "./src/screens/form";
+import Container from "./container";
 
 export default function App() {
 
@@ -49,7 +50,7 @@ export default function App() {
 
   return (
     <NativeBaseProvider>
-      <FormNativeBase />
+      <Container />
     </NativeBaseProvider>
   );
 }
