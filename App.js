@@ -9,8 +9,6 @@ import {
   BalsamiqSans_400Regular, 
   BalsamiqSans_400Regular_Italic
 } from '@expo-google-fonts/balsamiq-sans'
-
-import FormNativeBase from "./src/screens/form";
 import Container from "./container";
 
 export default function App() {

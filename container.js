@@ -1,17 +1,14 @@
-// Import React Navigation & Stack
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-// Import Styling
 import { useTheme } from 'native-base'
 
-// Create Stack Navigation
 const Stack = createStackNavigator()
 
-// Import Screens
-import FormNativeBase from './src/screens/form'
-import Hello from './src/screens/hello'
-import IncDec from './src/screens/incDec'
+import Home from './src/screens/Home'
+import Today from './src/screens/Today'
+import Homework from './src/screens/Homework'
+import Collection from './src/screens/collection'
 
 export default function Container(){
 
@@ -24,16 +21,24 @@ export default function Container(){
                 screenOptions={{
                     headerStyle: { 
                         backgroundColor: theme.colors.primary['900']
-                     }
+                    }
                 }}
             >
                 <Stack.Screen 
                     name='Home'
-                    component={Hello} 
+                    component={Home} 
                 />
                 <Stack.Screen 
-                    name='IncDec'
-                    component={IncDec} 
+                    name='Collection'
+                    component={Collection} 
+                />
+                <Stack.Screen 
+                    name='Activity'
+                    component={Today} 
+                />
+                <Stack.Screen 
+                    name='Homework'
+                    component={Homework} 
                 />
             </Stack.Navigator>
         </NavigationContainer>
